@@ -18,7 +18,7 @@ You can interact with the bot by messaging it.
 1. Click on **Use this template > Open in a codebase**.
 2. Wait for the codespace to be setup, it may take a few minutes.
 3. Using the Teams Toolkit extension, sign in with your Microsoft 365 account where you have permissions to upload custom apps.
-4. Duplicate the ```sample.env``` file and rename it as ```.env```. Populate the ```AZURE_OPENAI_MODEL, AZURE_OPENAI_ENDPOINT, AZURE_SEARCH_ENDPOINT``` variables.
+4. Duplicate the ```sample.env``` file and rename it as ```.env```. Populate the ```AZURE_OPENAI_MODEL, AZURE_OPENAI_ENDPOINT, AZURE_SEARCH_ENDPOINT, AZURE_SEARCH_INDEX``` variables.
 5. If you are using API keys for authentication, then populate the ```AZURE_OPENAI_KEY, AZURE_SEARCH_KEY``` variables.
    
 #### If you want to debug locally, continue to step 6, else skip to step 9.
