@@ -1,0 +1,10 @@
+# Teams Toolkit
+.env
+env/*.user
+appPackage/build
+.deployment
+
+# Python stuff
+.venv
+dist
+src/__pycache__
