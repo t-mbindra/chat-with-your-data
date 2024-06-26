@@ -70,10 +70,10 @@ class CompletionConfig:
     max_input_tokens: int = 2048
     model: Optional[str] = None
     presence_penalty: float = 0
-    stop_sequences: Optional[list[str]] = None
+    stop_sequences: Optional[List[str]] = None
     temperature: float = 0
     top_p: float = 0
-    data_sources: Optional[list[object]] = None
+    data_sources: Optional[List[object]] = None
 
     @classmethod
     def from_dict(cls, data: dict) -> "CompletionConfig":
@@ -90,5 +90,5 @@ class CompletionConfig:
             stop_sequences=data.get("stop_sequences"),
             temperature=data.get("temperature", 0),
             top_p=data.get("top_p", 0),
-            data_sources=data.get("data_sources"),
+            data_sources=data.get("data_sources", None),
         )
