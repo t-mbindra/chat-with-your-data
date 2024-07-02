@@ -18,8 +18,10 @@ You can interact with the bot by messaging it.
 1. Click on **Use this template > Open in a codebase**.
 2. Wait for the codespace to be setup, it may take a few minutes.
 3. Using the Teams Toolkit extension, sign in with your Microsoft 365 account where you have permissions to upload custom apps.
-4. Duplicate the ```sample.env``` file and rename it as ```.env```. Populate the ```AZURE_OPENAI_MODEL, AZURE_OPENAI_ENDPOINT, AZURE_SEARCH_ENDPOINT, AZURE_SEARCH_INDEX``` variables.
-5. If you are using API keys for authentication, then populate the ```AZURE_OPENAI_KEY, AZURE_SEARCH_KEY``` variables.
+4. Login to the Azure CLI using ```az login --use-device-code```.
+5. Deploy necessary Azure resources using ```az deployment group create --name $$DEPLOYMENT_NAME$$ --resource-group $$RESOURCE_GRIUP_NAME$$ --template-file ./infra/azure.ai.resources.json```.
+6. Duplicate the ```sample.env``` file and rename it as ```.env```. Populate the ```AZURE_OPENAI_MODEL, AZURE_OPENAI_ENDPOINT, AZURE_SEARCH_ENDPOINT, AZURE_SEARCH_INDEX``` variables.
+7. If you are using API keys for authentication, then populate the ```AZURE_OPENAI_KEY, AZURE_SEARCH_KEY``` variables.
    
 #### If you want to debug locally, continue to step 6, else skip to step 9.
 6. Press **Ctrl+Shift+D** to open the **Run and Debug** menu. Select **Debug** and press **F5** or click on the play button
