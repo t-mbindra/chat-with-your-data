@@ -8,3 +8,4 @@ appPackage/build
 .venv
 dist
 src/__pycache__
+*/__pycahce__
