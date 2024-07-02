@@ -20,7 +20,7 @@ You can interact with the bot by messaging it.
 3. Using the Teams Toolkit extension, sign in with your Microsoft 365 account where you have permissions to upload custom apps.
 4. Login to the Azure CLI using ```az login --use-device-code```.
 5. Deploy necessary Azure resources using ```az deployment group create --name $$DEPLOYMENT_NAME$$ --resource-group $$RESOURCE_GROUP_NAME$$ --template-file ./infra/azure.ai.resources.json```.
-6. Go to the [Azure AI Studio](#https://oai.azure.com/portal) and proceed to the **Chat Playground**. Add your data according to the instructions [here](#https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/use-your-data?tabs=ai-search) and wait for data to be ingested. 
+6. Go to the [Azure AI Studio](#https://oai.azure.com/portal) and proceed to the **Chat Playground**. Add your data according to the instructions [here](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/use-your-data?tabs=ai-search) and wait for data to be ingested. 
 7. Duplicate the ```sample.env``` file and rename it as ```.env```. Populate the ```AZURE_OPENAI_MODEL, AZURE_OPENAI_ENDPOINT, AZURE_SEARCH_ENDPOINT, AZURE_SEARCH_INDEX``` variables from the [Azure AI portal](#https://ms.portal.azure.com/).
    
 #### If you want to debug locally, continue to step 8, else skip to step 11.
