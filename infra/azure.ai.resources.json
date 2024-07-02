@@ -144,28 +144,6 @@
                 "currentCapacity": 150,
                 "raiPolicyName": "Microsoft.Default"
             }
-        },
-        {
-            "type": "Microsoft.CognitiveServices/accounts/deployments",
-            "apiVersion": "2024-04-01-preview",
-            "name": "[concat(parameters('accounts_azure_openai_name'), '/embedding')]",
-            "dependsOn": [
-                "[resourceId('Microsoft.CognitiveServices/accounts', parameters('accounts_azure_openai_name'))]"
-            ],
-            "sku": {
-                "name": "Standard",
-                "capacity": 50
-            },
-            "properties": {
-                "model": {
-                    "format": "OpenAI",
-                    "name": "text-embedding-ada-002",
-                    "version": "2"
-                },
-                "versionUpgradeOption": "OnceNewDefaultVersionAvailable",
-                "currentCapacity": 50,
-                "raiPolicyName": "Microsoft.Default"
-            }
         }
     ]
 }
