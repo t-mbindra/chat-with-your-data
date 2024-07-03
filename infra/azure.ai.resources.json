@@ -136,7 +136,7 @@
             ],
             "sku": {
                 "name": "Standard",
-                "capacity": [parameters("capacity")]
+                "capacity": "[parameters('capacity')]"
             },
             "properties": {
                 "model": {
