@@ -17,6 +17,9 @@
       "botDisplayName": {
           "value": "TeamsAzureOpenAI"
       },
+      "linuxFxVersion": {
+        "value": "PYTHON|3.11"
+      },
       "azureOpenAIKey": {
           "value": "${{SECRET_AZURE_OPENAI_KEY}}"
       },
