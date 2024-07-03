@@ -3,20 +3,24 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "storageAccounts_name": {
-            "defaultValue": "TeamsAzureOpenAIstorage",
+            "defaultValue": "teamsazureopenaistorage",
             "type": "string"
         },
         "searchServices_name": {
-            "defaultValue": "TeamsAzureOpenAI-search",
+            "defaultValue": "teamsazureopenai-search",
             "type": "string"
         },
         "accounts_azure_openai_name": {
-            "defaultValue": "TeamsAzureOpenAI-cognitive",
+            "defaultValue": "teamsazureopenai-cognitive",
             "type": "string"
         },
         "location":{
             "defaultValue": "west us",
             "type": "string"
+        },
+        "capacity":{
+            "defaultValue": 50,
+            "type": "int"
         }
     },
     "variables": {},
@@ -126,13 +130,13 @@
         {
             "type": "Microsoft.CognitiveServices/accounts/deployments",
             "apiVersion": "2024-04-01-preview",
-            "name": "[concat(parameters('accounts_azure_openai_name'), '/GPT4')]",
+            "name": "[concat(parameters('accounts_azure_openai_name'), '/gpt-4o')]",
             "dependsOn": [
                 "[resourceId('Microsoft.CognitiveServices/accounts', parameters('accounts_azure_openai_name'))]"
             ],
             "sku": {
                 "name": "Standard",
-                "capacity": 50
+                "capacity": [parameters("capacity")]
             },
             "properties": {
                 "model": {
