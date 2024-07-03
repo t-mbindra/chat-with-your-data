@@ -83,7 +83,7 @@ async def get_default_prompt(context: TurnContext, state: TurnState, planner: Ac
                     "in_scope": True,
                     "strictness": 3,
                     "top_n_documents": 5,
-                    "role_information": Path(__file__).resolve().parent.joinpath('../src/prompts/chat/skprompt.txt').read_text(encoding='utf-8')
+                    "role_information": Path(__file__).resolve().parent.joinpath('./prompts/chat/skprompt.txt').read_text(encoding='utf-8')
                 }  
             }
         ]
@@ -101,7 +101,7 @@ async def get_default_prompt(context: TurnContext, state: TurnState, planner: Ac
                         "in_scope": True,
                         "strictness": 3,
                         "top_n_documents": 5,
-                        "role_information": Path(__file__).resolve().parent.joinpath('../src/prompts/chat/skprompt.txt').read_text(encoding='utf-8'),
+                        "role_information": Path(__file__).resolve().parent.joinpath('./prompts/chat/skprompt.txt').read_text(encoding='utf-8')
                         "authentication": {
                             "type": 'system_assigned_managed_identity'
                         }
