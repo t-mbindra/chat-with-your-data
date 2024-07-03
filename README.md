@@ -21,7 +21,7 @@ You can interact with the bot by messaging it.
 4. Login to the Azure CLI using ```az login --use-device-code```.
 5. Deploy necessary Azure resources using ```az deployment group create --name $$DEPLOYMENT_NAME$$ --resource-group $$RESOURCE_GROUP_NAME$$ --template-file ./infra/azure.ai.resources.json```.
 6. Go to the [Azure AI Studio](https://oai.azure.com/portal) and proceed to the **Chat Playground**. Add your data according to the instructions [here](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/use-your-data?tabs=ai-search) and wait for data to be ingested. 
-7. Duplicate the ```sample.env``` file and rename it as ```.env```. Populate the ```AZURE_OPENAI_KEY, AZURE_OPENAI_ENDPOINT, AZURE_SEARCH_ENDPOINT, AZURE_SEARCH_KEY, AZURE_SEARCH_INDEX``` variables from the [Azure AI portal](https://ms.portal.azure.com/).
+7. Populate the ```SECRET_AZURE_OPENAI_KEY, SECRET_AZURE_OPENAI_ENDPOINT, SECRET_AZURE_SEARCH_ENDPOINT, SECRET_AZURE_SEARCH_KEY, AZURE_SEARCH_INDEX``` variables from the [Azure AI portal](https://ms.portal.azure.com/) in the ```env/.env.local.user``` file
    
 #### If you want to debug locally, continue to step 8, else skip to step 11.
 8. Press **Ctrl+Shift+D** to open the **Run and Debug** menu. Select **Debug** and press **F5** or click on the play button
@@ -30,8 +30,9 @@ You can interact with the bot by messaging it.
 
 #### Continue here to deploy the app on Azure.
 11. Using the Teams Toolkit extension, sign into your Azure account.
-12. Using the Teams Toolkit Extension tab, click on **Provision** under lifecycle. Select relevant subscription and resource group when prompted.
-13. Using the Teams Toolkit Extension tab, click on **Deploy** under lifecycle.
-14. Download the zip file ```appPackage/build/appPackage.dev.zip```.
-15. Go to your Teams app and click on the **App** icon.
-16. Select **Manage your apps** followed by **Upload an app**. Select **Upload a custom app** and open the downloaded zip file.
+12. Populate the ```SECRET_AZURE_OPENAI_KEY, SECRET_AZURE_OPENAI_ENDPOINT, SECRET_AZURE_SEARCH_ENDPOINT, SECRET_AZURE_SEARCH_KEY, AZURE_SEARCH_INDEX``` variables from the [Azure AI portal](https://ms.portal.azure.com/) in the ```env/.env.dev.user``` file
+13. Using the Teams Toolkit Extension tab, click on **Provision** under lifecycle. Select relevant subscription and resource group when prompted.
+14. Using the Teams Toolkit Extension tab, click on **Deploy** under lifecycle.
+15. Download the zip file ```appPackage/build/appPackage.dev.zip```.
+16. Go to your Teams app and click on the **App** icon.
+17. Select **Manage your apps** followed by **Upload an app**. Select **Upload a custom app** and open the downloaded zip file.
