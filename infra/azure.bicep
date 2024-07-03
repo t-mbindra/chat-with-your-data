@@ -24,6 +24,7 @@ param azureSearchIndex string = ''
 param botAadAppClientSecret string
 
 param webAppSKU string
+param linuxFxVersion string
 
 @maxLength(42)
 param botDisplayName string
@@ -31,20 +32,24 @@ param botDisplayName string
 param serverfarmsName string = resourceBaseName
 param webAppName string = resourceBaseName
 param location string = resourceGroup().location
+param pythonVersion string = linuxFxVersion
 
 // Compute resources for your Web App
 resource serverfarm 'Microsoft.Web/serverfarms@2021-02-01' = {
-  kind: 'app'
+  kind: 'app,linux'
   location: location
   name: serverfarmsName
   sku: {
     name: webAppSKU
   }
+    properties:{
+    reserved: true
+  }
 }
 
 // Web App that hosts your bot
 resource webApp 'Microsoft.Web/sites@2021-02-01' = {
-  kind: 'app'
+  kind: 'app,linux'
   location: location
   name: webAppName
   properties: {
@@ -52,6 +57,8 @@ resource webApp 'Microsoft.Web/sites@2021-02-01' = {
     httpsOnly: true
     siteConfig: {
       alwaysOn: true
+      appCommandLine: 'gunicorn --bind 0.0.0.0 --worker-class aiohttp.worker.GunicornWebWorker --timeout 600 api:api'
+      linuxFxVersion: pythonVersion
       appSettings: [
         {
           name: 'SCM_DO_BUILD_DURING_DEPLOYMENT'
