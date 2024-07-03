@@ -5,8 +5,8 @@
     "id": "${{TEAMS_APP_ID}}",
     "packageName": "com.package.name",
     "name": {
-        "short": "DataSourceAzureOpenAI-${{TEAMSFX_ENV}}",
-        "full": "Data Source Azure OpenAI"
+        "short": "TeamsAzureOpenAI-${{TEAMSFX_ENV}}",
+        "full": "Teams Azure OpenAI"
     },
     "developer": {
         "name": "Microsoft",
