@@ -27,6 +27,7 @@ You can interact with the bot by messaging it.
 9. Go to the link (https://dev.botframework.com/bots?id=...) from the Output console.
 10. Click on **Microsoft Teams**. Use the web app or launch the Teams app to use the bot.
 
+[!Note]
 > You can check the status of all your bots on [Microsoft Bot Framework](https://dev.botframework.com/bots). Additionally, you can check the status of all your Teams apps on the [Teams Developer Portal](https://dev.teams.microsoft.com/apps).
 
 
@@ -38,5 +39,7 @@ You can interact with the bot by messaging it.
 15. Go to your Teams app and click on the **App** icon. Select **Manage your apps** followed by **Upload an app**.
 16. Select **Upload a custom app** and open the downloaded zip file. Click on **Add** when prompted. Select where you want to use the app.
 
+[!Note]
 > You can check the status of all Azure resources on the [Azure Portal](https://portal.azure.com/#home) by navigating to the relevant resource group.
+
 > If you do not have permission to upload custom apps (sideloading), Teams Toolkit will recommend creating and using a Microsoft 365 Developer Program account - a free program to get your own dev environment sandbox that includes Teams.
