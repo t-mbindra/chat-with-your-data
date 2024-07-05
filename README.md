@@ -35,9 +35,8 @@ You can interact with the bot by messaging it.
 12. Using the Teams Toolkit Extension tab, click on **Provision** under lifecycle. Select relevant subscription and resource group when prompted.
 13. Using the Teams Toolkit Extension tab, click on **Deploy** under lifecycle.
 14. Download the zip file ```appPackage/build/appPackage.dev.zip```.
-15. Go to your Teams app and click on the **App** icon.
-16. Select **Manage your apps** followed by **Upload an app**. Select **Upload a custom app** and open the downloaded zip file.
-17. Click on **Add** when prompted. Select where you want to use the app.
+15. Go to your Teams app and click on the **App** icon. Select **Manage your apps** followed by **Upload an app**.
+16. Select **Upload a custom app** and open the downloaded zip file. Click on **Add** when prompted. Select where you want to use the app.
 
 > You can check the status of all Azure resources on the [Azure Portal](https://portal.azure.com/#home) by navigating to the relevant resource group.
 > If you do not have permission to upload custom apps (sideloading), Teams Toolkit will recommend creating and using a Microsoft 365 Developer Program account - a free program to get your own dev environment sandbox that includes Teams.
