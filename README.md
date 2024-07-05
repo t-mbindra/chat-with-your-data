@@ -17,7 +17,7 @@ You can interact with the bot by messaging it.
 
 1. Click on **Use this template > Open in a codebase**. Wait for the codespace to be setup, it may take a couple of minutes.
 2. Using the Teams Toolkit extension, sign in with your Microsoft 365 account where you have permissions to upload custom apps. Also, sign in to your Azure account.
-3. Replace <<resource-group-name>> in deploy.sh with the name of the resource group where you want to create the Azure AI resources.
+3. Replace /<resource-group-name/> in deploy.sh with the name of the resource group where you want to create the Azure AI resources.
 5. Deploy Azure AI resources by running ```sh deploy.sh``` in the terminal. Yuo will be prompted to login to Azure and select a subscription.
 6. Go to the [Azure AI Studio](https://oai.azure.com/portal) and proceed to the **Chat Playground**. Add your data according to the instructions [here](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/use-your-data?tabs=ai-search) and wait for data to be ingested. 
 7. Populate the ```SECRET_AZURE_OPENAI_KEY, SECRET_AZURE_OPENAI_ENDPOINT, SECRET_AZURE_SEARCH_ENDPOINT, SECRET_AZURE_SEARCH_KEY, AZURE_SEARCH_INDEX``` variables from the [Azure portal](https://ms.portal.azure.com/) in the ```env/.env.local.user``` file
