@@ -2233,7 +2233,7 @@ types-pyyaml = "^6.0.12.12"
 
 [package.source]
 type = "git"
-url = "git+https://github.com/microsoft/teams-ai.git"
+url = "https://github.com/microsoft/teams-ai.git"
 verify_ssl = true
 subdirectory = "python/packages/ai"
 
