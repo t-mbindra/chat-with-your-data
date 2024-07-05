@@ -28,7 +28,7 @@ You can interact with the bot by messaging it.
 10. Click on **Microsoft Teams**. Use the web app or launch the Teams app to use the bot.
 
 >[!Note]
-> You can check the status of all your bots on [Microsoft Bot Framework](https://dev.botframework.com/bots). Additionally, you can check the status of all your Teams apps on the [Teams Developer Portal](https://dev.teams.microsoft.com/apps).
+> You can check the status of all your local bots on [Microsoft Bot Framework](https://dev.botframework.com/bots). Additionally, you can check the status of all your Teams apps on the [Teams Developer Portal](https://dev.teams.microsoft.com/apps).
 
 
 #### Continue here to deploy the app on Azure.
