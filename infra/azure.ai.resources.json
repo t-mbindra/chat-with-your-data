@@ -3,15 +3,15 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "storageAccounts_name": {
-            "defaultValue": "teamsazureopenaiblob",
+            "defaultValue": "faqbot",
             "type": "string"
         },
         "searchServices_name": {
-            "defaultValue": "teamsazureopenai-search",
+            "defaultValue": "faqbot-search",
             "type": "string"
         },
         "accounts_azure_openai_name": {
-            "defaultValue": "teamsazureopenai-cognitive",
+            "defaultValue": "faqbot-cognitive",
             "type": "string"
         },
         "location":{
@@ -37,93 +37,29 @@
             "identity": {
                 "type": "SystemAssigned"
             },
-            "properties": {
-                "networkAcls": {
-                    "defaultAction": "Allow",
-                    "virtualNetworkRules": [],
-                    "ipRules": []
-                },
-                "publicNetworkAccess": "Enabled"
-            }
+            "properties": {}
         },
         {
             "type": "Microsoft.Search/searchServices",
             "apiVersion": "2024-03-01-preview",
             "name": "[parameters('searchServices_name')]",
             "location": "[parameters('location')]",
-            "tags": {
-                "ProjectType": "aoai-your-data-service"
-            },
             "sku": {
                 "name": "standard"
             },
-            "properties": {
-                "replicaCount": 1,
-                "partitionCount": 1,
-                "hostingMode": "Default",
-                "publicNetworkAccess": "Enabled",
-                "networkRuleSet": {
-                    "ipRules": [],
-                    "bypass": "None"
-                },
-                "encryptionWithCmk": {
-                    "enforcement": "Unspecified"
-                },
-                "disableLocalAuth": false,
-                "authOptions": {
-                    "aadOrApiKey": {
-                        "aadAuthFailureMode": "http401WithBearerChallenge"
-                    }
-                },
-                "disabledDataExfiltrationOptions": [],
-                "semanticSearch": "free"
-            }
+            "properties": {}
         },
         {
             "type": "Microsoft.Storage/storageAccounts",
             "apiVersion": "2023-05-01",
             "name": "[parameters('storageAccounts_name')]",
             "location": "[parameters('location')]",
-            "tags": {
-                "ProjectType": "aoai-your-data-service"
-            },
             "sku": {
                 "name": "Standard_LRS",
                 "tier": "Standard"
             },
             "kind": "StorageV2",
             "properties": {
-                "dnsEndpointType": "Standard",
-                "defaultToOAuthAuthentication": false,
-                "publicNetworkAccess": "Enabled",
-                "allowCrossTenantReplication": false,
-                "isSftpEnabled": false,
-                "minimumTlsVersion": "TLS1_2",
-                "allowBlobPublicAccess": false,
-                "allowSharedKeyAccess": true,
-                "largeFileSharesState": "Enabled",
-                "isHnsEnabled": true,
-                "networkAcls": {
-                    "bypass": "AzureServices",
-                    "virtualNetworkRules": [],
-                    "ipRules": [],
-                    "defaultAction": "Allow"
-                },
-                "supportsHttpsTrafficOnly": true,
-                "encryption": {
-                    "requireInfrastructureEncryption": false,
-                    "services": {
-                        "file": {
-                            "keyType": "Account",
-                            "enabled": true
-                        },
-                        "blob": {
-                            "keyType": "Account",
-                            "enabled": true
-                        }
-                    },
-                    "keySource": "Microsoft.Storage"
-                },
                 "accessTier": "Hot"
             }
         },
