@@ -3,15 +3,15 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "storageAccounts_name": {
-            "defaultValue": "faqbot",
+            "defaultValue": "teamsazureopenai",
             "type": "string"
         },
         "searchServices_name": {
-            "defaultValue": "faqbot-search",
+            "defaultValue": "teamsazureopenai-search",
             "type": "string"
         },
         "accounts_azure_openai_name": {
-            "defaultValue": "faqbot-cognitive",
+            "defaultValue": "teamsazureopenai-cognitive",
             "type": "string"
         },
         "location":{
@@ -86,4 +86,4 @@
             }
         }
     ]
-}
+} 
