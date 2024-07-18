@@ -6,15 +6,29 @@
 
 <!-- code_chunk_output -->
 
+## Setting up the app locally
+
+1. Clone the repository.
+   ```git clone https://github.com/t-mbindra/chat-with-your-data.git```
+2. Install [Python 3.12](https://www.python.org/downloads/), [Node.js](https://nodejs.org/), [Rust](https://www.rust-lang.org/tools/install).
+4. Install  [Poetry](https://python-poetry.org/docs/#installation) and [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
+5. Open the project folder in [Visual Studio Code](https://code.visualstudio.com/download).
+6. Install the [Teams Toolkit Extension](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) and the [Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python).
+8. Run
+   ```poetry install```
+9. Run
+   ```poetry build```
+#### Skip to step 2 below.
+
 ## Setting up the app in Github Codespaces
 
 1. Click Open in GitHub Codespaces badge above to create a codespace for the sample app. Wait for the codespace to be setup, it may take a couple of minutes.
 2. Using the Teams Toolkit extension, sign in to your Microsoft 365 account and Azure account under ```ACCOUNTS```.
 3. Deploy Azure AI resources by running ```sh deploy.sh``` in the terminal. You will be prompted to login to Azure and select a subscription.
 4. Go to the [Azure AI Studio](https://oai.azure.com/portal) and proceed to the ```Chat Playground```. Add your data according to the instructions [here](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/use-your-data?tabs=ai-search) and wait for data to be ingested. 
-5. Populate the ```SECRET_AZURE_OPENAI_KEY, SECRET_AZURE_OPENAI_ENDPOINT, SECRET_AZURE_SEARCH_ENDPOINT, SECRET_AZURE_SEARCH_KEY, AZURE_SEARCH_INDEX``` variables from the [Azure portal](https://ms.portal.azure.com/) in the ```env/.env.local.user``` file
    
-#### To debug locally, continue to step 6, else skip to step 12.
+#### To debug locally, continue to step 5, else skip to step 12.
+5. Populate the ```SECRET_AZURE_OPENAI_KEY, SECRET_AZURE_OPENAI_ENDPOINT, SECRET_AZURE_SEARCH_ENDPOINT, SECRET_AZURE_SEARCH_KEY, AZURE_SEARCH_INDEX``` variables from the [Azure portal](https://ms.portal.azure.com/) in the ```env/.env.local.user``` file
 6. Press **Ctrl+Shift+D** to open the ```Run and Debug``` menu. Select ```Debug``` and press ```F5``` or click on the play button.
 7. Download the zip file ```appPackage/build/appPackage.local.zip```.
 
