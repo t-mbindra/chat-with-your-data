@@ -8,7 +8,7 @@
 
 ## Setting up the app locally
 
-1. Clone the repository.
+1. Clone the repository
    ```git clone https://github.com/t-mbindra/chat-with-your-data.git```
 2. Install [Python 3.12](https://www.python.org/downloads/), [Node.js](https://nodejs.org/), [Rust](https://www.rust-lang.org/tools/install).
 4. Install  [Poetry](https://python-poetry.org/docs/#installation) and [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
