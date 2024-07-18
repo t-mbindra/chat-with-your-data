@@ -44,7 +44,7 @@
 
 ## Sideloading the app to Teams:
 1. Go to your Teams app and click on the ```Apps``` icon. Select ```Manage your apps``` followed by ```Upload an app```.
-2. Select ```Upload a custom app``` and open the relevant zip file. Click on ```Add```  and ```Open``` when prompted.
+2. Select ```Upload a custom app``` and open the relevant zip file. Click on ```Add``` when prompted.
 
 >[!Note]
 > Check the status of all your local bots on [Microsoft Bot Framework](https://dev.botframework.com/bots).
