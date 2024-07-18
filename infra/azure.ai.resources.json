@@ -19,7 +19,7 @@
             "type": "string"
         },
         "capacity":{
-            "defaultValue": 150,
+            "defaultValue": 50,
             "type": "int"
         }
     },
