@@ -42,7 +42,7 @@
 2. Go to the [Azure AI Studio](https://oai.azure.com/portal) and proceed to the ```Chat Playground```. Add your data according to the instructions [here](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/use-your-data?tabs=ai-search) and wait for data to be ingested.
 3. Populate the ```SECRET_AZURE_OPENAI_KEY, SECRET_AZURE_OPENAI_ENDPOINT, SECRET_AZURE_SEARCH_ENDPOINT, SECRET_AZURE_SEARCH_KEY, AZURE_SEARCH_INDEX``` variables from the [Azure portal](https://ms.portal.azure.com/) in the ```env/.env.local.user``` file or ```env/.env.dev.user``` file according to environment.
 
-#### Sideloading the app to Teams:
+## Sideloading the app to Teams:
 1. Go to your Teams app and click on the ```Apps``` icon. Select ```Manage your apps``` followed by ```Upload an app```.
 2. Select ```Upload a custom app``` and open the relevant zip file. Click on ```Add``` when prompted. Select where you want to use the app.
 
