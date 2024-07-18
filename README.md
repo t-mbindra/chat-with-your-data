@@ -13,7 +13,7 @@
 2. Install [Python 3.12](https://www.python.org/downloads/), [Node.js](https://nodejs.org/), [Rust](https://www.rust-lang.org/tools/install).
 4. Install  [Poetry](https://python-poetry.org/docs/#installation) and [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
 5. Open the project folder in [Visual Studio Code](https://code.visualstudio.com/download).
-6. Install the [Teams Toolkit Extension](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) and the [Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python).
+6. Install the [Teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) and [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) extensions.
 8. Run
    ```poetry install```
 9. Run
