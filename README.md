@@ -18,29 +18,33 @@
    ```poetry install```
 9. Run
    ```poetry build```
-#### Skip to step 2 below.
+10. Deploy [Azure AI resources](deploy-azure-ai-resources). This only needs to be done once.
+11. Using the Teams Toolkit extension, sign in to your Microsoft 365 account and Azure account under ```ACCOUNTS```.
+12. Deploying locally:
+   Press **Ctrl+Shift+D** to open the ```Run and Debug``` menu. Press ```F5``` or click on the play button
+14. Alternatively, deploy the app to Azure:
+    Using the Teams Toolkit Extension tab, click on ```Provision``` followed by ```DEPLOY``` under ```LIFECYCLE```. [Sideload the app to Teams](sideloading-the-app-to-teams)
+    
+## Deploy Azure AI Resources
+> Run```sh deploy.sh``` in the terminal. You will be prompted to login to Azure and select a subscription.
+> Go to the [Azure AI Studio](https://oai.azure.com/portal) and proceed to the ```Chat Playground```. Add your data according to the instructions [here](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/use-your-data?tabs=ai-search) and wait for data to be ingested.
+> Populate the ```SECRET_AZURE_OPENAI_KEY, SECRET_AZURE_OPENAI_ENDPOINT, SECRET_AZURE_SEARCH_ENDPOINT, SECRET_AZURE_SEARCH_KEY, AZURE_SEARCH_INDEX``` variables from the [Azure portal](https://ms.portal.azure.com/) in the ```env/.env.local.user``` file or ```env/.env.dev.user``` file according to environment.
 
 ## Setting up the app in Github Codespaces
 
 1. Click Open in GitHub Codespaces badge above to create a codespace for the sample app. Wait for the codespace to be setup, it may take a couple of minutes.
 2. Using the Teams Toolkit extension, sign in to your Microsoft 365 account and Azure account under ```ACCOUNTS```.
-3. Deploy Azure AI resources by running ```sh deploy.sh``` in the terminal. You will be prompted to login to Azure and select a subscription.
-4. Go to the [Azure AI Studio](https://oai.azure.com/portal) and proceed to the ```Chat Playground```. Add your data according to the instructions [here](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/use-your-data?tabs=ai-search) and wait for data to be ingested. 
-   
-#### To debug locally, continue to step 5, else skip to step 12.
-5. Populate the ```SECRET_AZURE_OPENAI_KEY, SECRET_AZURE_OPENAI_ENDPOINT, SECRET_AZURE_SEARCH_ENDPOINT, SECRET_AZURE_SEARCH_KEY, AZURE_SEARCH_INDEX``` variables from the [Azure portal](https://ms.portal.azure.com/) in the ```env/.env.local.user``` file
-6. Press **Ctrl+Shift+D** to open the ```Run and Debug``` menu. Select ```Debug``` and press ```F5``` or click on the play button.
-7. Download the zip file ```appPackage/build/appPackage.local.zip```.
-
-#### To deploy the app on Azure:
-8. Populate the ```SECRET_AZURE_OPENAI_KEY, SECRET_AZURE_OPENAI_ENDPOINT, SECRET_AZURE_SEARCH_ENDPOINT, SECRET_AZURE_SEARCH_KEY, AZURE_SEARCH_INDEX``` variables from the [Azure portal](https://ms.portal.azure.com/) in the ```env/.env.dev.user``` file.
-9. Using the Teams Toolkit Extension tab, click on ```Provision``` under ```LIFECYCLE```. Select relevant subscription and resource group when prompted.
-10. Using the Teams Toolkit Extension tab, click on ```Deploy``` under ```LIFECYCLE```.
-11. 7. Download the zip file ```appPackage/build/appPackage.dev.zip```.
+3. Deploy [Azure AI resources](deploy-azure-ai-resources)
+4. Deploying locally:
+   Press **Ctrl+Shift+D** to open the ```Run and Debug``` menu. Select ```Debug``` and press ```F5``` or click on the play button.
+   Download the zip file ```appPackage/build/appPackage.local.zip``` and [sideload the app to Teams](sideloading-the-app-to-teams).
+5. Alternatively, deploy the app to Azure:
+   Using the Teams Toolkit Extension tab, click on ```Provision``` followed by ```DEPLOY``` under ```LIFECYCLE```.
+   Download the zip file ```appPackage/build/appPackage.dev.zip``` and [sideload the app to Teams](sideloading-the-app-to-teams).
 
 #### Sideloading the app to Teams:
 12. Go to your Teams app and click on the ```Apps``` icon. Select ```Manage your apps``` followed by ```Upload an app```.
-13. Select ```Upload a custom app``` and open the downloaded zip file. Click on ```Add``` when prompted. Select where you want to use the app.
+13. Select ```Upload a custom app``` and open the relevant zip file. Click on ```Add``` when prompted. Select where you want to use the app.
 
 >[!Note]
 > Check the status of all your local bots on [Microsoft Bot Framework](https://dev.botframework.com/bots).
