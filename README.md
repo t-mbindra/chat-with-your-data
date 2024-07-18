@@ -17,8 +17,6 @@
 #### To debug locally, continue to step 6, else skip to step 7.
 6. Press **Ctrl+Shift+D** to open the ```Run and Debug``` menu. Select ```Debug``` and press ```F5``` or click on the play button.
 #### Skip to step 10.
->[!Note]
-> You can check the status of all your local bots on [Microsoft Bot Framework](https://dev.botframework.com/bots). Additionally, you can check the status of all your Teams apps on the [Teams Developer Portal](https://dev.teams.microsoft.com/apps).
 
 #### To deploy the app on Azure:
 7. Populate the ```SECRET_AZURE_OPENAI_KEY, SECRET_AZURE_OPENAI_ENDPOINT, SECRET_AZURE_SEARCH_ENDPOINT, SECRET_AZURE_SEARCH_KEY, AZURE_SEARCH_INDEX``` variables from the [Azure portal](https://ms.portal.azure.com/) in the ```env/.env.dev.user``` file.
@@ -31,6 +29,8 @@
 12. Select ```Upload a custom app``` and open the downloaded zip file. Click on ```Add``` when prompted. Select where you want to use the app.
 
 >[!Note]
-> You can check the status of all Azure resources on the [Azure Portal](https://portal.azure.com/#home) by navigating to the relevant resource group.
+> Check the status of all your local bots on [Microsoft Bot Framework](https://dev.botframework.com/bots).
+> Check the status of all your Teams apps on [Teams Developer Portal](https://dev.teams.microsoft.com/apps).
+> Check the status of all Azure resources on [Azure Portal](https://portal.azure.com/#home) by navigating to the relevant resource group.
 
 > If you do not have permission to upload custom apps (sideloading), Teams Toolkit will recommend creating and using a Microsoft 365 Developer Program account - a free program to get your own dev environment sandbox that includes Teams.
