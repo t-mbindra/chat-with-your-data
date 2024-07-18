@@ -14,19 +14,19 @@
 4. Go to the [Azure AI Studio](https://oai.azure.com/portal) and proceed to the ```Chat Playground```. Add your data according to the instructions [here](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/use-your-data?tabs=ai-search) and wait for data to be ingested. 
 5. Populate the ```SECRET_AZURE_OPENAI_KEY, SECRET_AZURE_OPENAI_ENDPOINT, SECRET_AZURE_SEARCH_ENDPOINT, SECRET_AZURE_SEARCH_KEY, AZURE_SEARCH_INDEX``` variables from the [Azure portal](https://ms.portal.azure.com/) in the ```env/.env.local.user``` file
    
-#### To debug locally, continue to step 6, else skip to step 7.
+#### To debug locally, continue to step 6, else skip to step 12.
 6. Press **Ctrl+Shift+D** to open the ```Run and Debug``` menu. Select ```Debug``` and press ```F5``` or click on the play button.
-#### Skip to step 10.
+7. Download the zip file ```appPackage/build/appPackage.local.zip```.
 
 #### To deploy the app on Azure:
-7. Populate the ```SECRET_AZURE_OPENAI_KEY, SECRET_AZURE_OPENAI_ENDPOINT, SECRET_AZURE_SEARCH_ENDPOINT, SECRET_AZURE_SEARCH_KEY, AZURE_SEARCH_INDEX``` variables from the [Azure portal](https://ms.portal.azure.com/) in the ```env/.env.dev.user``` file.
-8. Using the Teams Toolkit Extension tab, click on ```Provision``` under ```LIFECYCLE```. Select relevant subscription and resource group when prompted.
-9. Using the Teams Toolkit Extension tab, click on ```Deploy``` under ```LIFECYCLE```.
+8. Populate the ```SECRET_AZURE_OPENAI_KEY, SECRET_AZURE_OPENAI_ENDPOINT, SECRET_AZURE_SEARCH_ENDPOINT, SECRET_AZURE_SEARCH_KEY, AZURE_SEARCH_INDEX``` variables from the [Azure portal](https://ms.portal.azure.com/) in the ```env/.env.dev.user``` file.
+9. Using the Teams Toolkit Extension tab, click on ```Provision``` under ```LIFECYCLE```. Select relevant subscription and resource group when prompted.
+10. Using the Teams Toolkit Extension tab, click on ```Deploy``` under ```LIFECYCLE```.
+11. 7. Download the zip file ```appPackage/build/appPackage.dev.zip```.
 
 #### Sideloading the app to Teams:
-10. Download the zip file ```appPackage/build/appPackage.dev.zip```.
-11. Go to your Teams app and click on the ```Apps``` icon. Select ```Manage your apps``` followed by ```Upload an app```.
-12. Select ```Upload a custom app``` and open the downloaded zip file. Click on ```Add``` when prompted. Select where you want to use the app.
+12. Go to your Teams app and click on the ```Apps``` icon. Select ```Manage your apps``` followed by ```Upload an app```.
+13. Select ```Upload a custom app``` and open the downloaded zip file. Click on ```Add``` when prompted. Select where you want to use the app.
 
 >[!Note]
 > Check the status of all your local bots on [Microsoft Bot Framework](https://dev.botframework.com/bots).
