@@ -6,15 +6,6 @@
 
 <!-- code_chunk_output -->
 
-- [Interacting with the bot](#interacting-with-the-bot)
-- [Setting up the app in Github Codespaces](#setting-up-the-app-in-github-codespaces)
-
-<!-- /code_chunk_output -->
-
-## Interacting with the bot
-
-You can interact with the bot by messaging it.
-
 ## Setting up the app in Github Codespaces
 
 1. Click Open in GitHub Codespaces badge above to create a codespace for the sample app. Wait for the codespace to be setup, it may take a couple of minutes.
