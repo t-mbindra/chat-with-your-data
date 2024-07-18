@@ -10,7 +10,7 @@
 
 1. Clone the repository
    ```git clone https://github.com/t-mbindra/chat-with-your-data.git```
-2. Install [Python 3.12](https://www.python.org/downloads/), [Node.js](https://nodejs.org/), [Rust](https://www.rust-lang.org/tools/install).
+2. Install [Python 3.12](https://www.python.org/downloads/), [Node.js](https://nodejs.org/) and [Rust](https://www.rust-lang.org/tools/install).
 4. Install  [Poetry](https://python-poetry.org/docs/#installation) and [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
 5. Open the project folder in [Visual Studio Code](https://code.visualstudio.com/download).
 6. Install the [Teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) and [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) extensions.
