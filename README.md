@@ -17,7 +17,7 @@
 #### If you want to debug locally, continue to step 6, else skip to step 9.
 6. Press **Ctrl+Shift+D** to open the ```Run and Debug``` menu. Select ```Debug``` and press ```F5``` or click on the play button.
 7. Go to the link (https://dev.botframework.com/bots?id=...) from the Output console.
-8. Click on **Microsoft Teams**. Click on ```Add`` when prompted. Select where you want to use the app.
+8. Click on **Microsoft Teams**. Click on ```Add``` when prompted. Select where you want to use the app.
 
 >[!Note]
 > You can check the status of all your local bots on [Microsoft Bot Framework](https://dev.botframework.com/bots). Additionally, you can check the status of all your Teams apps on the [Teams Developer Portal](https://dev.teams.microsoft.com/apps).
