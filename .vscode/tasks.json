@@ -75,6 +75,17 @@
             "args": {
                 "env": "local"
             }
+        },
+        {
+           // Launch Teams web client for codespaces F5.
+           // See https://aka.ms/teamsfx-tasks/launch-web-client to know the details and how to customize the args.
+          "label": "Open Teams Web Client",
+          "type": "teamsfx",
+          "command": "launch-web-client",
+          "args": {
+            "env": "local",
+            "manifestPath": "${workspaceFolder}/appPackage/manifest.json"
+          }
         }
     ]
 }
