@@ -23,7 +23,7 @@
 12. Deploying locally:
    Press **Ctrl+Shift+D** to open the ```Run and Debug``` menu. Press ```F5``` or click on the play button
 14. Alternatively, deploy the app to Azure:
-    Using the Teams Toolkit Extension tab, click on ```Provision``` followed by ```DEPLOY``` under ```LIFECYCLE```. [#Sideload the app to Teams](sideloading-the-app-to-teams)
+    Using the Teams Toolkit Extension tab, click on ```Provision``` followed by ```DEPLOY``` under ```LIFECYCLE```. [Sideload the app to Teams](#sideloading-the-app-to-teams)
 
 ## Setting up the app in Github Codespaces
 
