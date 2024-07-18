@@ -6,6 +6,18 @@
 
 <!-- code_chunk_output -->
 
+## Setting up the app in Github Codespaces
+
+1. Click Open in GitHub Codespaces badge above to create a codespace for the sample app. Wait for the codespace to be setup, it may take a couple of minutes.
+2. Using the Teams Toolkit extension, sign in to your Microsoft 365 account and Azure account under ```ACCOUNTS```.
+3. Deploy [Azure AI resources](#deploy-azure-ai-resources)
+4. Deploying locally:
+   Press **Ctrl+Shift+D** to open the ```Run and Debug``` menu. Select ```Debug``` and press ```F5``` or click on the play button.
+   Download the zip file ```appPackage/build/appPackage.local.zip``` and [sideload the app to Teams](#sideloading-the-app-to-teams).
+5. Alternatively, deploy the app to Azure:
+   Using the Teams Toolkit Extension tab, click on ```Provision``` followed by ```DEPLOY``` under ```LIFECYCLE```.
+   Download the zip file ```appPackage/build/appPackage.dev.zip``` and [sideload the app to Teams](#sideloading-the-app-to-teams).
+
 ## Setting up the app locally
 
 1. Clone the repository
@@ -24,18 +36,6 @@
    Press **Ctrl+Shift+D** to open the ```Run and Debug``` menu. Press ```F5``` or click on the play button
 14. Alternatively, deploy the app to Azure:
     Using the Teams Toolkit Extension tab, click on ```Provision``` followed by ```DEPLOY``` under ```LIFECYCLE```. [Sideload the app to Teams](#sideloading-the-app-to-teams)
-
-## Setting up the app in Github Codespaces
-
-1. Click Open in GitHub Codespaces badge above to create a codespace for the sample app. Wait for the codespace to be setup, it may take a couple of minutes.
-2. Using the Teams Toolkit extension, sign in to your Microsoft 365 account and Azure account under ```ACCOUNTS```.
-3. Deploy [Azure AI resources](#deploy-azure-ai-resources)
-4. Deploying locally:
-   Press **Ctrl+Shift+D** to open the ```Run and Debug``` menu. Select ```Debug``` and press ```F5``` or click on the play button.
-   Download the zip file ```appPackage/build/appPackage.local.zip``` and [sideload the app to Teams](#sideloading-the-app-to-teams).
-5. Alternatively, deploy the app to Azure:
-   Using the Teams Toolkit Extension tab, click on ```Provision``` followed by ```DEPLOY``` under ```LIFECYCLE```.
-   Download the zip file ```appPackage/build/appPackage.dev.zip``` and [sideload the app to Teams](#sideloading-the-app-to-teams).
 
 ## Deploy Azure AI Resources
 1. Run```sh deploy.sh``` in the terminal. You will be prompted to login to Azure and select a subscription.
