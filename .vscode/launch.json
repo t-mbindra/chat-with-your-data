@@ -87,11 +87,11 @@
             "stopAll": true
         },
         {
-            "name": "Debug",
+            "name": "Debug (Codespaces)",
             "configurations": [
                 "Start"
             ],
-            "preLaunchTask": "Start Teams App Locally",
+            "preLaunchTask": "Start Teams App in Codespaces",
             "presentation": {
                 "group": "all",
                 "order": 3
