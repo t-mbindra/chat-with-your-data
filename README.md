@@ -1,5 +1,9 @@
 # Chat With Your Data
 
+<a href="https://github.com/codespaces/new?repo=<chat-with-your-data>" target="_blank">
+  <img src="https://github.com/buttons/open-in-codespaces.svg" alt="Open in Codespaces"/>
+</a>
+
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
