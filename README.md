@@ -23,7 +23,7 @@
 8. Using the Teams Toolkit Extension tab, click on ```Provision``` under ```LIFECYCLE```. Select relevant subscription and resource group when prompted.
 9. Using the Teams Toolkit Extension tab, click on ```Deploy``` under ```LIFECYCLE```.
 
-### Sideloading the app to Teams:
+#### Sideloading the app to Teams:
 10. Download the zip file ```appPackage/build/appPackage.dev.zip```.
 11. Go to your Teams app and click on the ```Apps``` icon. Select ```Manage your apps``` followed by ```Upload an app```.
 12. Select ```Upload a custom app``` and open the downloaded zip file. Click on ```Add``` when prompted. Select where you want to use the app.
