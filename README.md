@@ -17,7 +17,7 @@ You can interact with the bot by messaging it.
 
 ## Setting up the app in Github Codespaces
 
-1. Click on **Use this template > Open in a codebase**. Wait for the codespace to be setup, it may take a couple of minutes.
+1. Click Open in GitHub Codespaces badge above to create a codespace for the sample app. Wait for the codespace to be setup, it may take a couple of minutes.
 2. Using the Teams Toolkit extension, sign in with your Microsoft 365 account where you have permissions to upload custom apps. Also, sign in to your Azure account.
 3. Deploy Azure AI resources by running ```sh deploy.sh``` in the terminal. You will be prompted to login to Azure and select a subscription.
 4. Go to the [Azure AI Studio](https://oai.azure.com/portal) and proceed to the **Chat Playground**. Add your data according to the instructions [here](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/use-your-data?tabs=ai-search) and wait for data to be ingested. 
@@ -26,7 +26,7 @@ You can interact with the bot by messaging it.
 #### If you want to debug locally, continue to step 6, else skip to step 9.
 6. Press **Ctrl+Shift+D** to open the **Run and Debug** menu. Select **Debug** and press **F5** or click on the play button
 7. Go to the link (https://dev.botframework.com/bots?id=...) from the Output console.
-8. Click on **Microsoft Teams**. Use the web app or launch the Teams app to use the bot.
+8. Click on **Microsoft Teams**. Click on **Add** when prompted. Select where you want to use the app.
 
 >[!Note]
 > You can check the status of all your local bots on [Microsoft Bot Framework](https://dev.botframework.com/bots). Additionally, you can check the status of all your Teams apps on the [Teams Developer Portal](https://dev.teams.microsoft.com/apps).
