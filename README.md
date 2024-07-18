@@ -13,9 +13,11 @@
 3. Deploy [Azure AI resources](#deploy-azure-ai-resources)
 4. Deploying locally:
    Press **Ctrl+Shift+D** to open the ```Run and Debug``` menu. Select ```Debug``` and press ```F5``` or click on the play button.
+   
    Download the zip file ```appPackage/build/appPackage.local.zip``` and [sideload the app to Teams](#sideloading-the-app-to-teams).
-5. Alternatively, deploy the app to Azure:
+6. Alternatively, deploy the app to Azure:
    Using the Teams Toolkit Extension tab, click on ```Provision``` followed by ```DEPLOY``` under ```LIFECYCLE```.
+   
    Download the zip file ```appPackage/build/appPackage.dev.zip``` and [sideload the app to Teams](#sideloading-the-app-to-teams).
 
 ## Setting up the app locally
