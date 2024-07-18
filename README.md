@@ -1,8 +1,6 @@
 # Chat With Your Data
 
-<a href="https://github.com/codespaces/new?repo=<chat-with-your-data>" target="_blank">
-  <img src="https://github.com/buttons/open-in-codespaces.svg" alt="Open in Codespaces"/>
-</a>
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=820189237)
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
