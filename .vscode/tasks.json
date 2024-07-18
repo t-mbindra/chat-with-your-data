@@ -15,17 +15,6 @@
             "dependsOrder": "sequence"
         },
         {
-            "label": "Start Teams App in Codespaces",
-            "dependsOn": [
-                "Validate prerequisites",
-                "Start local tunnel",
-                "Provision",
-                "Deploy",
-                "Open Teams Web Client"
-            ],
-            "dependsOrder": "sequence"
-        },
-        {
             // Check all required prerequisites.
             // See https://aka.ms/teamsfx-tasks/check-prerequisites to know the details and how to customize the args.
             "label": "Validate prerequisites",
@@ -86,17 +75,6 @@
             "args": {
                 "env": "local"
             }
-        },
-        {
-           // Launch Teams web client for codespaces F5.
-           // See https://aka.ms/teamsfx-tasks/launch-web-client to know the details and how to customize the args.
-          "label": "Open Teams Web Client",
-          "type": "teamsfx",
-          "command": "launch-web-client",
-          "args": {
-            "env": "local",
-            "manifestPath": "${workspaceFolder}/appPackage/manifest.json"
-          }
         }
     ]
 }
