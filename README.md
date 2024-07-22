@@ -9,14 +9,10 @@
 ## Setting up the app in Github Codespaces
 1. Click Open in GitHub Codespaces badge above to create a codespace for the sample app. Wait for the codespace to be setup, it may take a couple of minutes.
 2. Using the Teams Toolkit extension, sign in to your Microsoft 365 account and Azure account under ```ACCOUNTS```.
-3. [Set up your data source using Azure AI resources](#set-up-your-data-source).
-4. [Populate the environment files](#populate-the-env-files).
-5. Deploying locally:
-      - Press **Ctrl+Shift+D** to open the ```Run and Debug``` menu. Select ```Debug``` and press ```F5``` or click on the play button.
-      - Download the zip file ```appPackage/build/appPackage.local.zip``` and [sideload the app to Teams](#sideloading-the-app-to-teams).
-6. Alternatively, deploy the app to Azure:
-      - Using the Teams Toolkit Extension tab, click on ```Provision``` followed by ```DEPLOY``` under ```LIFECYCLE```. You will be asked to select the subscription and resource group for provisioning.
-      - Download the zip file ```appPackage/build/appPackage.dev.zip``` and [sideload the app to Teams](#sideloading-the-app-to-teams).
+3. [Set up your data source using Azure AI resources](#setting-up-your-data-source).
+4. [Populate the environment files](#populating-the-env-files).
+5. Press **Ctrl+Shift+D** to open the ```Run and Debug``` menu. Select ```Debug``` and press ```F5``` or click on the play button.
+6. Download the zip file ```appPackage/build/appPackage.local.zip``` and [sideload the app to Teams](#sideloading-the-app-to-teams).
 
 ## Setting up the app locally
 1. Clone the repository
@@ -30,23 +26,24 @@
 9. Run
    ```poetry build```
 10. Using the Teams Toolkit extension, sign in to your Microsoft 365 account and Azure account under ```ACCOUNTS```.
-11. [Set up your data source using Azure AI resources](#set-up-your-data-source).
-12. [Populate the environment files](#populate-the-env-files).
-13. Deploying locally:
-      - Press **Ctrl+Shift+D** to open the ```Run and Debug``` menu. Press ```F5``` or click on the play button.
-14. Alternatively, deploy the app to Azure:
-      - Using the Teams Toolkit Extension tab, click on ```Provision``` followed by ```DEPLOY``` under ```LIFECYCLE```. You will be asked to select the subscription and resource group for provisioning.
-      - Using the zip file ```appPackage/build/appPackage.dev.zip```, [sideload the app to Teams](#sideloading-the-app-to-teams).
+11. [Set up your data source using Azure AI resources](#setting-up-your-data-source).
+12. [Populate the environment files](#populating-the-env-files).
+13. Press **Ctrl+Shift+D** to open the ```Run and Debug``` menu. Press ```F5``` or click on the play button.
 
-## Set up your data source
+## Deploying the app on Azure
+Instead of the ```Debug``` or ```F5``` flow, you can deploy the app on Azure:
+1. Using the Teams Toolkit Extension tab, click on ```Provision``` followed by ```DEPLOY``` under ```LIFECYCLE```. You will be asked to select the subscription and resource group for provisioning.
+2. Download the zip file ```appPackage/build/appPackage.dev.zip``` and [sideload the app to Teams](#sideloading-the-app-to-teams).
+
+## Setting up your data source
 1. Run```sh deploy.sh``` in the terminal. You will be prompted to login to Azure and select a subscription.
 2. Go to the [Azure AI Studio](https://oai.azure.com/portal), select relevant subscription and the resource ```teamsazureopenai-cognitive```. Proceed to the ```Chat Playground```. 
 3. Click on ```Add a data source``` under the ```Add your data``` tab. Upload your data with ```Upload files``` or ```URL/ web address```.
 4. Select```teamsazureopenai``` as your storage resource and ```teamsazureopanai-search``` as your search resource. Type the index-name you want to use. Ensure you have the correct subscription selected.
 5. Add your data and select search type and chunk size. Select ```API Key``` as the authentication type. Save and Close and wait for the data to be ingested.
 
-## Populate the env files
-1. You need to populate the environemnt variables in ```env/.env.local.user``` if you are deploying the app locally. Else, populate the environemnt variables in ```env/.env.dev.user``` if you are dpleoying the app on Azure.
+## Populating the environment files
+1. You need to populate the environment variables in ```env/.env.local.user``` if you are using the ```Debug``` or ```F5``` flow. Else, populate the environment variables in ```env/.env.dev.user``` if you are dpleoying the app on Azure.
 2. Go to the the [Azure portal](https://ms.portal.azure.com/) and navigate to the resource group ```ChatWithYourData```. 
 3. Go to the ```teamsazureopenai-cognitive``` resource. Select the ```Keys and Endpoints``` tab under ```Resource Management```. Populate the ```SECRET_AZURE_OPENAI_KEY, SECRET_AZURE_OPENAI_ENDPOINT``` using ```Key 1``` and ```Endpoint```.   
 4. Go to the ```teamsazureopenai-search``` resource. Populate ```SECRET_AZURE_SEARCH_ENDPOINT``` from the ```Url``` given. Select the ```Keys``` tab under ```Settings```.  Populate ```SECRET_AZURE_SEARCH_KEY``` using the ```Primary admin key```.
